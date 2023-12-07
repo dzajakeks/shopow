@@ -10,29 +10,35 @@ import {
   CheckoutPage,
   SingleProductPage,
 } from './pages';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/shopow'>
           <Home />
         </Route>
-        <Route exact path='/cartpage'>
+        <Route exact path='/shopow/cartpage'>
           <CartPage />
         </Route>
-        <Route exact path='/products'>
+        <Route exact path='/shopow/products'>
           <ProductsPage />
         </Route>
-        <Route exact path='/products/:id' children={<SingleProductPage />} />
-        <Route exact path='/checkout'>
+        <Route
+          exact
+          path='/shopow/products/:id'
+          children={<SingleProductPage />}
+        />
+        <Route exact path='/shopow/checkout'>
           <CheckoutPage />
         </Route>
         <Route path='*'>
           <ErrorPage />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 };

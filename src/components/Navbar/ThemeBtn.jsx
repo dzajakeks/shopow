@@ -20,7 +20,7 @@ const ThemeBtn = () => {
   }, [theme]);
 
   return (
-    <label className='swap swap-rotate'>
+    <label className='swap swap-rotate mx-2'>
       <input
         type='checkbox'
         onChange={handleToggle}
