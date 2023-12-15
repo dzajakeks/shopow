@@ -91,7 +91,9 @@ const Navbar = () => {
               </div>
             </div>
             <li>
-              <Link className='btn btn-ghost text-lg'>Login</Link>
+              <Link to='/' className='btn btn-ghost text-lg'>
+                Login
+              </Link>
             </li>
           </ul>
         </div>
@@ -129,7 +131,9 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <Link className='btn btn-ghost text-lg'>Login</Link>
+        <Link to='/' className='btn btn-ghost text-lg'>
+          Login
+        </Link>
       </div>
     </div>
   );
