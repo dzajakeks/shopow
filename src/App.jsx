@@ -31,6 +31,9 @@ const App = () => {
           path='/shopow/products/:id'
           children={<SingleProductPage />}
         />
+        <Route path='/shopow/cart'>
+          <CartPage />
+        </Route>
         <Route exact path='/shopow/checkout'>
           <CheckoutPage />
         </Route>

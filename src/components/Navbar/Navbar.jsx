@@ -21,13 +21,15 @@ const Navbar = () => {
 
   if (windowWidth < 600) {
     return (
-      <div className='drawer drawer-end'>
+      <div className='drawer drawer-end '>
         <input id='my-drawer-3' type='checkbox' className='drawer-toggle' />
         <div className='drawer-content flex flex-col'>
           {/* Navbar */}
           <div className='w-full navbar bg-base-300'>
-            <div className='flex-1 px-2 mx-2 text-xl font-semibold'>Shopow</div>
-            <div className='flex-none'>
+            <div className='flex-1 px-2 mx-2 text-xl font-semibold '>
+              Shopow
+            </div>
+            <div className='flex-none '>
               <label
                 htmlFor='my-drawer-3'
                 aria-label='open sidebar'
@@ -58,21 +60,19 @@ const Navbar = () => {
             aria-label='close sidebar'
             className='drawer-overlay'
           ></label>
-          <ul className='menu content-center flex items-center  p-4 w-40 min-h-full bg-base-200'>
+          <div className='menu content-center flex items-center p-4 bg-base-200'>
             {/* Sidebar content here */}
-            <li>
-              <Link className='btn btn-ghost items-center' to='/shopow/'>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className='btn btn-ghost' to='/shopow/products'>
-                Products
-              </Link>
-            </li>
-            <li>
-              <ThemeBtn />
-            </li>
+
+            <Link className='btn btn-ghost items-center' to='/shopow/'>
+              Home
+            </Link>
+
+            <Link className='btn btn-ghost' to='/shopow/products'>
+              Products
+            </Link>
+
+            <ThemeBtn />
+
             <div className='dropdown dropdown-end'>
               <Cart />
               <div
@@ -83,9 +83,12 @@ const Navbar = () => {
                   <span className='font-bold text-lg'>8 Items</span>
                   <span className='text-info'>Subtotal: $999</span>
                   <div className='card-actions'>
-                    <button className='btn btn-primary btn-block'>
+                    <Link
+                      to='/shopow/cart'
+                      className='btn btn-primary btn-block'
+                    >
                       View cart
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -95,7 +98,7 @@ const Navbar = () => {
                 Login
               </Link>
             </li>
-          </ul>
+          </div>
         </div>
       </div>
     );
@@ -126,7 +129,9 @@ const Navbar = () => {
               <span className='font-bold text-lg'>8 Items</span>
               <span className='text-info'>Subtotal: $999</span>
               <div className='card-actions'>
-                <button className='btn btn-primary btn-block'>View cart</button>
+                <Link to='/shopow/cart' className='btn btn-primary btn-block'>
+                  View cart
+                </Link>
               </div>
             </div>
           </div>
