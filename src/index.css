@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.two-cols-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+}
+
+.content-center {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.distance-around {
+  padding: 0 0.7rem;
+}
+.sections-y-separate {
+  margin: 10rem auto;
+}
