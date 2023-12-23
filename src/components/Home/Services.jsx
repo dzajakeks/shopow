@@ -4,9 +4,9 @@ import { services } from '../../utils/constants';
 const Services = () => {
   console.log();
   return (
-    <section className='content-center distance-around sections-y-separate'>
-      <article className='two-cols-grid gap-x-12 gap-y-4 mb-4'>
-        <h3 className='text-4xl font-bold'>
+    <section className='sections-y-separate'>
+      <article className='two-cols-grid gap-x-28 gap-y-4 mb-4'>
+        <h3 className='small-header md:text-start text-center'>
           custom furniture <br /> built only for you
         </h3>
         <p>

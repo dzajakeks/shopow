@@ -5,10 +5,10 @@ import heroImg from '../../../public/home-hero-bg.jpeg';
 const Hero = () => {
   return (
     <>
-      <section className='two-cols-grid content-center py-12 distance-around sections-y-separate'>
+      <section className='two-cols-grid sections-y-separate'>
         <div className='flex justify-center flex-col mx-auto'>
-          <h2 className='text-4xl font-bold'>Shop what's best for you</h2>
-          <p className='my-4 max-w-md text-xl leading-9 '>
+          <h2 className='small-header'>Shop what's best for you</h2>
+          <p className='my-4 max-w-md text-xl leading-9 scalable-text'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro autem
             eum voluptatum rem at saepe vitae odio fuga quod laborum quis magni
             qui perspiciatis ex corrupti fugit quae, ratione exercitationem!
