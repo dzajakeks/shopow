@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className='footer footer-center h-[5rem] bg-base-300 text-base-content'>
       <aside>
-        <p>
+        <p className='px-4'>
           Copyright © {new Date().getFullYear()} - All right reserved by Shopow
           - Marko Popovic
         </p>

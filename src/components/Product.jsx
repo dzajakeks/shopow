@@ -4,7 +4,7 @@ import { formatPrice } from '../utils/formatPrice';
 
 const Product = ({ id, image, name, price }) => {
   return (
-    <div className='card w-full max-w-sm bg-base-100 shadow-xl'>
+    <div className='card w-full max-w-sm bg-base-100 shadow-xl -z-10'>
       <figure className='px-5 pt-10'>
         <img src={image} alt={name} className='rounded-xl h-56 object-cover' />
       </figure>

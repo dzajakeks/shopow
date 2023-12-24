@@ -5,8 +5,8 @@ const Services = () => {
   console.log();
   return (
     <section className='sections-y-separate'>
-      <article className='two-cols-grid gap-x-28 gap-y-4 mb-4'>
-        <h3 className='small-header md:text-start text-center'>
+      <article className='two-cols-grid gap-x-28 gap-y-4 mb-4 md:text-start text-center'>
+        <h3 className='small-header'>
           custom furniture <br /> built only for you
         </h3>
         <p>

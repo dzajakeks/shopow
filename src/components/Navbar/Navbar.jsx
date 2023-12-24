@@ -27,7 +27,9 @@ const Navbar = () => {
           {/* Navbar */}
           <div className='w-full navbar bg-base-300 h-[5rem]'>
             <div className='flex-1 px-2 mx-2 text-xl font-semibold '>
-              Shopow
+              <Link to='/shopow/' className='btn btn-ghost text-xl'>
+                Shopow
+              </Link>
             </div>
             <div className='flex-none '>
               <label

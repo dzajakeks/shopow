@@ -2,12 +2,12 @@ import React from 'react';
 
 const Newsletter = () => {
   return (
-    <section className='sections-y-separate'>
-      <h3 className='small-header md:text-start text-center mb-4'>
+    <section className='sections-y-separate md:text-start text-center'>
+      <h3 className='small-header  mb-4'>
         Join our newsletter and get 20% off
       </h3>
       <div className='flex flex-col md:flex-row justify-between items-center'>
-        <p className='max-w-xl'>
+        <p className='max-w-xl '>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sint
           unde quaerat ratione soluta veniam provident adipisci cumque eveniet
           tempore?
