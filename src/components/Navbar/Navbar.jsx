@@ -56,13 +56,13 @@ const Navbar = () => {
           {/* Page content here */}
         </div>
 
-        <div className='drawer-side content-center'>
+        <div className='drawer-side content-center z-[9999]'>
           <label
             htmlFor='my-drawer-3'
             aria-label='close sidebar'
             className='drawer-overlay'
           ></label>
-          <div className='menu  flex items-center p-4 bg-base-200'>
+          <div className='menu flex items-center p-4 bg-base-200'>
             {/* Sidebar content here */}
 
             <Link className='btn btn-ghost items-center' to='/shopow/'>

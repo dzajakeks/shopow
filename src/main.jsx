@@ -6,8 +6,6 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <ProductsProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   </ProductsProvider>
 );
