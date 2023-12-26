@@ -3,6 +3,7 @@ import { useParams, useHistory, Link } from 'react-router-dom';
 import { useProductsContext } from '../context/products_context';
 import { single_product_url as url } from '../utils/constants';
 import { formatPrice } from '../utils/formatPrice';
+import { upperCaseFirst } from '../utils/upperCaseFirstLetter';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
 import ProductImages from '../components/ProductImages';
@@ -29,7 +30,7 @@ const SingleProductPage = () => {
   }
 
   const {
-    name,
+    name = '',
     price,
     description,
     stock,
@@ -39,31 +40,34 @@ const SingleProductPage = () => {
     images,
     id: sku,
   } = product;
+
   return (
     <>
       <div className='content-center sections-y-separate distance-around'>
-        <Link className='btn' to='/shopow/products/'>
+        <Link className='btn btn-outline' to='/shopow/products/'>
           Back to Products
         </Link>
-        <div className='two-cols-grid !grid-cols-[repeat(auto-fit,minmax(1fr,1fr))] place-items-center gap-4'>
+        <div className=' two-cols-grid !grid-cols-[repeat(auto-fit,minmax(1fr,1fr))] place-items-center gap-4'>
           <ProductImages images={images} />
-          <div>
-            <h2 className='small-header'>{name}</h2>
-            <StarReviews />
-            <h4>{formatPrice(price)}</h4>
+          <div className='[&>*]:my-2'>
+            <h2 className='small-header'>{upperCaseFirst(name)}</h2>
+            <StarReviews stars={stars} reviews={reviews} />
+            <h4 className='accent-text font-bold text-2xl'>
+              {formatPrice(price)}
+            </h4>
             <p>{description}</p>
             <p>
-              <span>Availability: </span>
-              {stock > 0 ? 'In stock' : 'Out of stock'}
+              <span className='accent-text'>Availability: </span>
+              {stock > 0 ? `${stock} in stock` : 'Out of stock'}
             </p>
             <p>
-              <span>SKU:</span> {sku}
+              <span className='accent-text'>SKU:</span> {sku}
             </p>
             <p>
-              <span>Brand:</span> {company}
+              <span className='accent-text'>Brand:</span> {company}
             </p>
             <hr />
-            {stock > 0 && <AddToCart />}
+            {stock > 0 && <AddToCart product={product} />}
           </div>
         </div>
       </div>

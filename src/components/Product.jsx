@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { formatPrice } from '../utils/formatPrice';
+import { upperCaseFirst } from '../utils/upperCaseFirstLetter';
 
 const Product = ({ id, image, name, price }) => {
   return (
@@ -9,7 +10,7 @@ const Product = ({ id, image, name, price }) => {
         <img src={image} alt={name} className='rounded-xl h-56 object-cover' />
       </figure>
       <div className='card-body items-center text-center'>
-        <h2 className='card-title'>{name}</h2>
+        <h2 className='card-title'>{upperCaseFirst(name)}</h2>
         <p>{formatPrice(price)}</p>
         <div className='card-actions'>
           <Link to={`/shopow/products/${id}`} className='btn btn-neutral '>
