@@ -27,7 +27,7 @@ const Navbar = () => {
           {/* Navbar */}
           <div className='w-full navbar bg-base-300 h-[5rem]'>
             <div className='flex-1 px-2 mx-2 text-xl font-semibold '>
-              <Link to='/shopow/' className='btn btn-ghost text-xl'>
+              <Link to='/shopow/' className='btn text-xl '>
                 Shopow
               </Link>
             </div>
@@ -107,10 +107,10 @@ const Navbar = () => {
   }
 
   return (
-    <div className='bg-base-300'>
+    <nav className='bg-base-300'>
       <div className='navbar h-[5rem] max-w-5xl mx-auto flex justify-between'>
         <div className='flex-1'>
-          <Link to='/shopow/' className='btn btn-ghost text-xl'>
+          <Link to='/shopow/' className='btn text-xl '>
             Shopow
           </Link>
         </div>
@@ -144,7 +144,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

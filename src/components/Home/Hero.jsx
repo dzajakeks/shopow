@@ -5,7 +5,7 @@ import heroImg from '../../../public/home-hero-bg.jpeg';
 const Hero = () => {
   return (
     <>
-      <section className='two-cols-grid sections-y-separate'>
+      <section className='two-cols-grid sections-y-separate content-center'>
         <div className='flex justify-center flex-col mx-auto'>
           <h2 className='small-header'>Shop what's best for you</h2>
           <p className='my-4 max-w-md text-xl leading-9 scalable-text'>
