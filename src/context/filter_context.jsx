@@ -15,6 +15,7 @@ import { useProductsContext } from './products_context';
 const initialState = {
   filtered_products: [],
   all_products: [],
+  is_products_loading: true,
 };
 
 const FilterContext = React.createContext();

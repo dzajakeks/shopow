@@ -1,7 +1,5 @@
 import {
   LOAD_PRODUCTS,
-  SET_LISTVIEW,
-  SET_GRIDVIEW,
   UPDATE_SORT,
   SORT_PRODUCTS,
   UPDATE_FILTERS,
@@ -15,6 +13,7 @@ const filter_reducer = (state, action) => {
       ...state,
       all_products: [...action.payload],
       filtered_products: [...action.payload],
+      is_products_loading: false,
     };
   }
   throw new Error(`No Matching "${action.type}" - action type`);

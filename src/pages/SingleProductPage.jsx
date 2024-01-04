@@ -23,6 +23,7 @@ const SingleProductPage = () => {
   }, []);
 
   if (loading) {
+    console.log('a ovde radi');
     return <Loading />;
   }
   if (error) {
